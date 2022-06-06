@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!-- <suite name="ExampleSuite" parallel="classes">-->
+    <suite name="liveSeleniumProjectGroupA" parallel="classes">
+    <test name="SuiteTests">
+        <groups>
+            <run>
+                <exclude name="HeaderTests" />
+               <!-- <include name="HeaderTests" /> -->
+            </run>
+        </groups>
+         <parameter name="username" value="root"></parameter>
+         <parameter name="password" value="pa$$w0rd"></parameter>
+         <classes>
+              <class name="liveSeleniumProjectGroupA.Activity1"></class>
+              <class name="liveSeleniumProjectGroupA.Activity2"></class>
+              <class name="liveSeleniumProjectGroupA.Activity3"></class>
+              <class name="liveSeleniumProjectGroupA.Activity4"></class>
+              <class name="liveSeleniumProjectGroupA.Activity5"></class>
+              <class name="liveSeleniumProjectGroupA.Activity6"></class>
+              <class name="liveSeleniumProjectGroupA.Activity7"></class>
+              <class name="liveSeleniumProjectGroupA.Activity8"></class>
+              <class name="liveSeleniumProjectGroupA.Activity9"></class>
+
+          </classes>
+      </test>
+
+  </suite>
