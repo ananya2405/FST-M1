@@ -12,13 +12,13 @@ public class Activity4_2 {
         System.out.println("The title of the page = " + driver.getTitle());
 
         //Use findElement() with xpath() to find all the input fields on the page.
-        driver.findElement(By.xpath("//*[@id=\"firstName\"]")).sendKeys("Test");
-        driver.findElement(By.xpath("//*[@id=\"lastName\"]")).sendKeys("userpassword");
-        driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("test@gmail.com");
-        driver.findElement(By.xpath("//*[@id=\"number\"]")).sendKeys("1321312321");
+        driver.findElement(By.xpath("//input[@id='firstName']")).sendKeys("Test");
+        driver.findElement(By.xpath("//input[@id='lastName']")).sendKeys("userpassword");
+        driver.findElement(By.xpath("//input[@id='email']")).sendKeys("test@gmail.com");
+        driver.findElement(By.xpath("//input[@id='number']")).sendKeys("1321312321");
 
         //Click the submit button at the end of the form to submit the form.
-        driver.findElement(By.xpath("//*[@id=\"simpleForm\"]/div/div[6]/div[1]/input")).click();
+        driver.findElement(By.xpath("//input[@class='ui green button']")).click();
         driver.quit();
 
 
