@@ -16,7 +16,7 @@ public class Activity9 {
 
         getList(myList);
 
-        System.out.println("The 3rd element in the list is = " +myList.get(3));
+        System.out.println("The 3rd element in the list is = " +myList.get(2));
         System.out.println("Is Nokia exist in the list? = "+myList.contains("Nokia"));
         System.out.println("The size of the arraylist before removal = "+ myList.size());
         myList.remove("Realme");
