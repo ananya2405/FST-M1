@@ -14,7 +14,7 @@ public class Activity4_1 {
         System.out.println("The title of the page = " + driver.getTitle());
 
         //Use findElement() with xpath() to find and click the "About Us" link on the page.
-        driver.findElement(By.xpath("//*[@id=\"about-link\"]")).click();
+        driver.findElement(By.xpath("//a[@id='about-link']")).click();
 
         //Print the title of the new page that open when the link is clicked.
         System.out.println("The title of the new page is = " + driver.getTitle());
