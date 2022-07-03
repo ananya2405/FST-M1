@@ -3,11 +3,13 @@ package activities;
 public class Activity8 {
     public static void main(String[] args) {
         try {
+            
+            //calling method with valid string
+            exceptionTest("This is a valid value");
+            
             //calling method with null which will throw the custom exception
             exceptionTest(null);
 
-            //calling method with valid string
-            exceptionTest("This is a valid value");
         } catch (CustomException e) {
             System.out.println("The customer exception message = "+e.getMessage());
         }
