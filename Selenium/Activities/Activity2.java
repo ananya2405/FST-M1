@@ -22,9 +22,9 @@ public class Activity2 {
         Print the text in the WebElement using the getText() method.
          */
         System.out.println("The desired text using id locator: " +driver.findElement(By.id("about-link")).getText());
-        System.out.println("The desired text using className locator: " +driver.findElement(By.className("button")).getText());
+        System.out.println("The desired text using className locator: " +driver.findElement(By.className("inverted")).getText());
         System.out.println("The desired text using linkText locator: " +driver.findElement(By.linkText("About Us")).getText());
-        System.out.println("The desired text using cssSelector locator: " +driver.findElement(By.cssSelector(".button")).getText());
+        System.out.println("The desired text using cssSelector locator: " +driver.findElement(By.cssSelector(".inverted")).getText());
 
         driver.quit();
 
