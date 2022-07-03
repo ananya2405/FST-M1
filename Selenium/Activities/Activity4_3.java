@@ -19,7 +19,7 @@ public class Activity4_3 {
         Find the violet button on the page and print all the class attribute values.
         Find the grey button on the page with Absolute XPath.
          */
-        System.out.println("The third header is = " + driver.findElement(By.xpath("//*[@id=\"third-header\"]")).getText());
+        System.out.println("The third header is = " + driver.findElement(By.xpath("//h3[@id='third-header']")).getText());
         System.out.println("The color of fifth header is = " + driver.findElement(By.xpath("//h5")).getCssValue("color"));
         System.out.println("The class attribute values of the violet button is = " + driver.findElement(By.xpath("//button[contains(text(), 'Violet')]")).getAttribute("class"));
         System.out.println("The grey button text is = " + driver.findElement(By.xpath("/html/body/div/div[2]/div/div[2]/div/div/div/div[2]/div[3]/button[2]")).getText());
