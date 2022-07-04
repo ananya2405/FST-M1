@@ -11,7 +11,7 @@ import org.testng.annotations.*;
 public class Activity1 {
     WebDriver driver;
     WebDriverWait wait;
-    @BeforeClass
+    @BeforeMethod
     public void setUp(){
         //create the a driver instance for FirefoxDriver
         driver = new FirefoxDriver();
@@ -38,7 +38,7 @@ public class Activity1 {
          Assert.assertEquals(pageTitle, "About Training Support");
      }
 
-     @AfterClass
+     @AfterMethod
     public void tearDown(){
         driver.quit();
      }
